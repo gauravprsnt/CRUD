@@ -10,15 +10,44 @@
 <head>
     <title>Insert</title>
 </head>
-<body>
+<body bgcolor="#7fffd4">
+<center>
+<div style="height: fit-content;width:300px;background-color: lightgray">
+    <h1 style="font-family: 'Ultra', sans-serif; color: saddlebrown">Insert Details</h1>
 <form name="addBook" method="post" action="book-controller">
-BookId:<input type="int" readonly="readonly" name="id" value="${book.id}"><br>
-BookName:<input type="text" name="bookname" value="${book.bookName}"><br>
-AuthorName:<input type="text" name="authorname" value="${book.authorName}"><br>
-PublicationName:<input type="text" name="publicationname" value="${book.publicationName}"><br>
-ContactEmail:<input type="text" name="contactemail" value="${book.contactEmail}"><br>
-<input type="submit" value="Save">
-</form>
+BookId:<br>
+    <input width="100%" type="int" readonly="readonly" name="id" value="${book.id}"><br><br>
+BookName:<br>
+    <input width="100%" type="text" name="bookname" value="${book.bookName}"><br><br>
+AuthorName:<br>
+    <input width="100%" type="text" name="authorname" value="${book.authorName}"><br><br>
+PublicationName:<br>
+    <input width="100%" type="text" name="publicationname" value="${book.publicationName}"><br><br>
+ContactEmail:<br>
+    <input width="100%" type="text" name="contactemail" value="${book.contactEmail}"><br><br>
+<input style="background-color: #4CAF50;
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;" type="submit" value="Save">&nbsp;&nbsp;
+    <input style="background-color: red;
+       border: none;
+       color: white;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       cursor: pointer;" type="reset" value="Clear">
 
+</form>
+</div>
+</center>
 </body>
 </html>

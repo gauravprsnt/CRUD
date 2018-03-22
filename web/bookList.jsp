@@ -11,21 +11,29 @@
 <head>
     <title>Book List</title>
 </head>
-<body>
-<table border=1>
+<body bgcolor="#7fffd4">
+<h1 align="center" style="font-family: 'Ultra', sans-serif; color: saddlebrown">Book List</h1>
+<p><a style="color:tomato" href="book-controller?action=insert">Add User</a></p>
+<table bgcolor="#d3d3d3" border=1 width="100%">
     <thead>
     <tr>
-        <th>Book Id</th>
-        <th>Book Name</th>
-        <th>Author Name</th>
-        <th>Publication Name</th>
-        <th>Contact Email</th>
-        <th colspan=2>Action</th>
+        <th style="background-color: #4CAF50;
+    color: white;" height="50px">Book Id</th>
+        <th style="background-color: #4CAF50;
+    color: white;" height="50px">Book Name</th>
+        <th style="background-color: #4CAF50;
+    color: white;" height="50px">Author Name</th>
+        <th style="background-color: #4CAF50;
+    color: white;" height="50px">Publication Name</th>
+        <th style="background-color: #4CAF50;
+    color: white;" height="50px">Contact Email</th>
+        <th style="background-color: #4CAF50;
+    color: white;" colspan=2 height="50px">Action</th>
     </tr>
     </thead>
     <tbody>
     <c:forEach items="${books}" var="book">
-        <tr>
+        <tr hover{background-color: #f5f5f5;}>
             <td><c:out value="${book.id}"/></td>
             <td><c:out value="${book.bookName}"/></td>
             <td><c:out value="${book.authorName}"/></td>
@@ -39,7 +47,7 @@
     </c:forEach>
     </tbody>
 </table>
-<p><a href="book-controller?action=insert">Add User</a></p>
+
 
 </body>
 </html>
